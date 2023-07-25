@@ -6,10 +6,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// eslint-disable-next-line func-style
-function head(arr) {
+let head = (arr) => {
+  if (arr.length === 0) {
+    return undefined;
+  }
   return arr[0];
 }
-
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+  assertEqual(head([5, 6, 7]), 5);
+  assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");

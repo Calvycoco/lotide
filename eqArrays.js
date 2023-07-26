@@ -14,7 +14,7 @@ function eqArrays(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) { // Loop through the arrays.
     if (arr1[i] !== arr2[i]) { // To see if the contents within the arrays has the same lengths.
       test = false;
-      return;
+      return test;
     }
   }
   return test //Check to see if there are differences.

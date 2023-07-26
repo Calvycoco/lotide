@@ -20,8 +20,7 @@ function eqArrays(arr1, arr2) {
   return test //Check to see if there are differences.
 }
 // Testing
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [2, 1, 3]), false); // => false
-assertEqual(eqArrays([1, 2, 3], [2, 3, 1]), false); // => false
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]) , true) // => true
-
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);

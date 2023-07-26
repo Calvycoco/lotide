@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 
 };
 
-//removed else statements for more legibility and less cluster
+//Wanted to attempt return statements for more legibility and less cluster, SUCCESS!
 function eqArrays(arr1, arr2) {
   let test = true; //If true then outcome will be true
   if (arr1.length !== arr2.length) { //This statement is to check if the two arrays has different lengths.

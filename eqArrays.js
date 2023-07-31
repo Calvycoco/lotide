@@ -1,15 +1,15 @@
-const eqArrays = function(arr1, arr2) {
-  let test = true; //If true then outcome will be true
-  if (arr1.length !== arr2.length) { //This statement is to check if the two arrays has different lengths.
-    return false;
+function eqArrays(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false; // Arrays have different lengths, they cannot be equal
   }
-  for (let i = 0; i < arr1.length; i++) { // Loop through the arrays.
-    if (arr1[i] !== arr2[i]) { // To see if the contents within the arrays has the same lengths.
-      test = false;
-      return test;
+
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false; // Elements at the same index are different, arrays are not equal
     }
   }
-  return test; //Check to see if there are differences.
+
+  return true; // All elements are the same, arrays are equal
 }
 
 module.exports = eqArrays;

@@ -37,7 +37,6 @@ const eqObjects = function(object1, object2) {
   let valuesForObject2 = Object.values(object2);
   valuesForObject2.sort();
 
-
   let areKeysEqual = eqArrays(keysForObject1, keysForObject2);
   let areValuesEqual = eqArrays(valuesForObject1, valuesForObject2);
 

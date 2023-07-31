@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-//Wanted to attempt return statements for more legibility and less cluster, SUCCESS!
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   let test = true; //If true then outcome will be true
   if (arr1.length !== arr2.length) { //This statement is to check if the two arrays has different lengths.
     return false;
@@ -19,8 +11,5 @@ function eqArrays(arr1, arr2) {
   }
   return test; //Check to see if there are differences.
 }
-// Testing
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+
+module.exports = eqArrays;

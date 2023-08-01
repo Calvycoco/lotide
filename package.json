@@ -1,0 +1,29 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "Calvin's lotide directory with tests",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calvycoco/lotide.git"
+  },
+  "keywords": [
+    "lotide"
+  ],
+  "author": "Calvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calvycoco/lotide/issues"
+  },
+  "homepage": "https://github.com/Calvycoco/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@calvycoco/lotide",
   "version": "1.0.0",
   "description": "Calvin's lotide directory with tests",
   "main": "assertArraysEqual.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Calvycoco/lotide.git"
   },
   "keywords": [
-    "lotide"
+    "lotide", "LHL", "functions", "library"
   ],
   "author": "Calvin",
   "license": "ISC",

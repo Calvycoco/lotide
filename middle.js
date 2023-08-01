@@ -12,6 +12,6 @@ const mid = function(arr) { // Executes middle array
     return [arr[mid1], arr[mid2]];
   }
   return arr;
-}
+};
 // Exports middle.js to test
-module.exports = mid
+module.exports = mid;

@@ -1,7 +1,25 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail')
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+
+describe("tail", () => {
+  it('should return ["Lighthouse", "Labs"] for input ["Hello", "Lighthouse", "Labs"]', () => {
+    const inputArray = ["Hello", "Lighthouse", "Labs"];
+    const result = tail(inputArray)
+    assert.deepEqual(result,["Lighthouse", "Labs"]);
+  });
+  it('should return [] for empty array', () => {
+    const inputArray = [];
+    const result = tail(inputArray)
+    assert.deepEqual(result,[]);
+  });
+  it('should return ["one"] for input ["one"]', () => {
+    const result = tail(["one"])
+    assert.deepEqual(result,[]);
+  });
+  it('should not change the elements in array', () => {
+    const inputArray = [1, 2, 3];
+    assert.deepEqual(tail(inputArray), [2, 3])
+    assert.deepEqual(inputArray,[1, 2, 3]);
+  });
+});
